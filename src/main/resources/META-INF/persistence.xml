@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="ProyectoLPIIVILLAGARAY2024">
+	
+	<!--SE VINCULAN LAS ENTIDADES QUE TENEMOS EN EL PAQUETE MODEL ... -->
+		<class>Modelo.TblCliente</class>
+		<class>Modelo.TblProducto</class>
+		<class>Modelo.TblTipoproducto</class>
+		<class>Modelo.TblUsuario</class>
+	
+		
+		
+		
+		<!-- MYSQL -->
+		<properties>
+		
+		
+		
+		<!-- propiedades o configuración de la conexión a BASE DE DATOS -->
+
+		
+
+			<!-- MySQL -->
+
+		<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+
+		<!--<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/ciberfarmadawi?serverTimezone=UTC" />-->
+
+		<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/bdjpa2024" />
+		<property name="javax.persistence.jdbc.user" value="root" />
+
+		<!-- <property name="javax.persistence.jdbc.password" value="mysql" />	-->		
+
+		<!-- Manejador Hibernate ORM -->
+		<property name="hibernate.hbm2ddl.auto" value="update" />
+		<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
+		<property name="hibernate.show_sql" value="true" />
+
+ 
+
+		
+		
+		
+		
+		</properties> <!-- FIN DE PROPERTIES -->
+		
+	</persistence-unit>
+</persistence>
